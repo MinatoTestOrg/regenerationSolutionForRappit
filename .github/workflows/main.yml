@@ -17,4 +17,6 @@ jobs:
 
     - name: Using the Action2...
       uses: ./.github/actions/action2
+      with:
+        var1: "Sukumaran Minato"
       
