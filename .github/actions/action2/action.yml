@@ -14,11 +14,13 @@ outputs:
   output1:
     required: true
 
-runs:
-  using: "composite"
-  env:
+env:
     variable1: ${{ inputs.var1 }}
     variable2: ${{ inputs.var2 }}
+    
+runs:
+  using: "composite"
+  
     
   steps:
     - name: Echoing the var1 content...
