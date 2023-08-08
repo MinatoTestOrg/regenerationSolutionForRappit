@@ -13,8 +13,11 @@ input:
 
 runs:
   using: "composite"
-  
   steps:
+    - name: Ifconfig
+      shell: bash
+      run: ifconfig
+      
     - name: Echoing the var1 content...
       shell: bash
       run: echo ${{ inputs.var1 }}
