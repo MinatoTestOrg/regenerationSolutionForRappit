@@ -1,0 +1,21 @@
+name: Action1
+description: Action1 for the main runner
+
+input:
+  var1:
+    default: "Minato Namikaze"
+    required: false
+
+  var2:
+    default: "Kushina Uzumaki"
+    required: false
+
+runs:
+  using: "composite"
+  steps:
+    - name: Echoing the var1 content...
+      run: echo ${{ inputs.var1 }}
+
+    - name: Echoing the var2 content...
+      run: echo ${{ inputs.var2 }}
+      
