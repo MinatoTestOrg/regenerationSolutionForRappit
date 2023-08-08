@@ -1,7 +1,7 @@
 name: Action1
 description: Action1 for the main runner
 
-input:
+inputs:
   var1:
     default: "Minato Namikaze"
     required: false
@@ -9,7 +9,6 @@ input:
   var2:
     default: "Kushina Uzumaki"
     required: false
-    type: string
 
 runs:
   using: "composite"
