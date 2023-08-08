@@ -24,7 +24,7 @@ runs:
 
     - name: Echoing the var2 content...
       shell: bash
-      var2: "Well done"
+      inputs.var2: "Well done"
       run: echo ${{ inputs.var2 }}
       
       
