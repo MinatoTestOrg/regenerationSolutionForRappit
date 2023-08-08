@@ -12,6 +12,7 @@ input:
 
 runs:
   using: "composite"
+  shell: bash
   steps:
     - name: Echoing the var1 content...
       run: echo ${{ inputs.var1 }}
