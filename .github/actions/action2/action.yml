@@ -10,6 +10,10 @@ inputs:
     default: "Hinata Hyuga"
     required: false
 
+outputs:
+  output1:
+    required: true
+
 runs:
   using: "composite"
   
@@ -20,5 +24,7 @@ runs:
 
     - name: Echoing the var2 content...
       shell: bash
+      var2: "Well done"
       run: echo ${{ inputs.var2 }}
+      
       
