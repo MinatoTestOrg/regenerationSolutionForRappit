@@ -16,15 +16,23 @@ outputs:
 
 runs:
   using: "composite"
-  
+  env:
+    variable1: ${{ inputs.var1 }}
+    variable2: ${{ inputs.var2 }}
+    
   steps:
     - name: Echoing the var1 content...
       shell: bash  
-      run: echo ${{ inputs.var1 }}
+      run: |
+        echo ${{ inputs.var1 }}
+        echo ${{ env.variable1 }}
 
     - name: Echoing the var2 content...
       shell: bash
-      inputs.var2: "Well done"
-      run: echo ${{ inputs.var2 }}
+      env.var2: "Well done"
+      run: |
+        echo ${{ inputs.var2 }}
+        echo ${{ env.variable2 }}
+      
       
       
