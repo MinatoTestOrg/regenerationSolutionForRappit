@@ -1,0 +1,9 @@
+name: build action
+description: build action for rappit
+
+runs:
+  using: "composite"
+
+  steps:
+    - name: Repo checkout...
+      uses: actions/checkout@v3
