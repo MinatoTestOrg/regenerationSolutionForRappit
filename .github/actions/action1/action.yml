@@ -12,11 +12,13 @@ input:
 
 runs:
   using: "composite"
-  shell: bash
+  
   steps:
     - name: Echoing the var1 content...
+      shell: bash
       run: echo ${{ inputs.var1 }}
 
     - name: Echoing the var2 content...
+      shell: bash
       run: echo ${{ inputs.var2 }}
       
