@@ -9,11 +9,7 @@ inputs:
   var2:
     default: "Hinata Hyuga"
     required: false
-
-outputs:
-  output1:
-    required: true
-
+    
 env:
     variable1: ${{ inputs.var1 }}
     variable2: ${{ inputs.var2 }}
