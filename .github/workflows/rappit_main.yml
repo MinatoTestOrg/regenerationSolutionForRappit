@@ -1,0 +1,14 @@
+name: Rappit runner
+
+on: workflow_dispatch
+
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Building...
+      uses: ./.github/actions/build
+
+    - name: Deploying...
+      uses: ./.github/actions/deploy
